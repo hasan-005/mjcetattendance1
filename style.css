@@ -1,0 +1,243 @@
+
+body{
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f0f4f8; /* Light grey-blue background */
+  color: #333; /* Dark grey text */
+
+header {
+  background: #130f8a; /* Deep blue background for header */
+  padding: 1.5em;
+  color: #fff; /* White text for header */
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for header */
+  border-bottom: 4px solid #14274e; /* Darker blue border for depth */
+
+}
+
+h2 {
+  color: #1e3a8a; /* Deep blue for section headings */
+  font-size: 1.8em;
+  margin-bottom: 1em;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.login-container {
+  padding: 2em;
+  max-width: 600px;
+  margin: auto;
+  background: #ffffff; /* White background for login container */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow for container */
+  margin-top: 2em;
+  border-radius: 10px; /* Rounded corners */
+  border: 2px solid #1e3a8a; /* Deep blue border for emphasis */
+}
+
+label {
+  display: block;
+  margin: 1em 0 0.5em;
+  font-weight: bold; /* Bold labels */
+  color: #1e3a8a; /* Deep blue text for labels */
+  font-size: 1.1em;
+}
+
+select, input {
+  padding: 0.7em;
+  width: 100%;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px; /* Rounded corners for inputs */
+  font-size: 1em;
+  background: #f9f9f9; /* Light grey background for inputs */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+select:focus, input:focus {
+  border-color: #1e3a8a; /* Deep blue border on focus */
+  box-shadow: 0 0 5px rgba(30, 58, 138, 0.5); /* Subtle glow effect */
+  outline: none;
+}
+
+button {
+  background: #1e3a8a; /* Deep blue background for buttons */
+  color: #fff; /* White text for buttons */
+  border: none;
+  cursor: pointer;
+  padding: 0.8em 1.5em;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 5px; /* Rounded corners for buttons */
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #14274e; /* Darker blue on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+.dashboard {
+  padding: 2em;
+  max-width: 900px;
+  margin: auto;
+  background: #ffffff; /* White background for dashboard */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow for container */
+  margin-top: 2em;
+  border-radius: 10px; /* Rounded corners */
+  border: 2px solid #1e3a8a; /* Deep blue border for emphasis */
+}
+
+.calendar-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1em;
+  font-weight: bold;
+  color: #1e3a8a; /* Deep blue text for calendar header */
+  font-size: 1.2em;
+}
+
+.calendar-header button {
+  background: #1e3a8a; /* Deep blue background for calendar buttons */
+  color: #fff; /* White text */
+  border: none;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.calendar-header button:hover {
+  background: #14274e; /* Darker blue on hover */
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  width: 100%;
+}
+
+.calendar-day {
+  background: #e0e7ff; /* Light blue background for calendar days */
+  padding: 15px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  font-size: 1em;
+  font-weight: bold;
+  color: #333; /* Dark grey text */
+}
+
+.calendar-day:hover {
+  background: #c7d2fe; /* Slightly darker blue on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+.calendar-day.declared {
+  background: #fde68a; /* Yellow background for declared days */
+}
+
+.calendar-day.marked {
+  background: #86efac; /* Green background for marked days */
+}
+
+#calendarMonthYear {
+  font-size: 1.5em;
+  color: #1e3a8a; /* Deep blue for calendar month/year */
+  font-weight: bold;
+}
+
+footer {
+  background: #1e3a8a; /* Deep blue background for footer */
+  color: #fff; /* White text for footer */
+  text-align: center;
+  padding: 1em;
+  margin-top: 2em;
+  font-size: 0.9em;
+  border-top: 4px solid #14274e; /* Darker blue border for depth */
+}
+
+.header-mjlogo {
+  max-width: 150px; /* Set maximum width */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Center the image */
+  margin: 0 auto; /* Center horizontally */
+  padding: 10px; /* Add padding around the image */
+  border: top left radius 35px; ;
+}
+
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  border-radius: 35px; /* Rounded corners for images */
+}
+
+button {
+  background: #1a9211;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 0.8em 1.5em;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s ease, transform 0.2s ease;
+  align-items: center;
+}
+
+h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  unicode-bidi: isolate;
+  align-items: center;
+  text-align: center;
+}
+
+table {
+  display: table;
+  border-collapse: separate;
+  box-sizing: border-box;
+  text-indent: initial;
+  unicode-bidi: isolate;
+  border-spacing: 2px;
+  border-color: gray;
+  align-items: center;
+}
+
+.attendance-actions {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1em;
+  align-items: center;
+}
+
+.login-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+  justify-items: normal;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1em;
+  padding: 1em;
+};
